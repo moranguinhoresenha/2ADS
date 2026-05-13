@@ -1,0 +1,26 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    
+    // Variáveis
+    real celsius, fh, fhFinal
+    
+    // Título
+    escreva("===============================================\n")
+    escreva("CONVERSOR DE TEMPERATURA CELCIUS PARA FARENHEIT\n")
+    escreva("===============================================\n")
+
+    // Entrada de Dados
+    escreva("\n• Digite a temperatura em graus Celcius: ")
+    leia(celsius)
+
+    // Conversão, arredondamento e exibição
+    fh = (celsius * 1.8) + 32
+    fhFinal = mat.arredondar(fh, 1)
+    escreva("\n\n\n\n===========================================")
+    escreva("\nTemperatura em °C: " + celsius)
+    escreva("\nTemperatura convertida para °F: " + fhFinal)
+    escreva("\n===========================================\n")
+
+  }
+}
