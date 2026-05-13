@@ -1,0 +1,34 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real nota1, nota2, nota3, media, mediaFinal
+    cadeia nome
+    
+    // Título
+    escreva("============================\n")
+    escreva("Programa para calcular média\n")
+    escreva("============================\n")
+
+    // Inserção de nome e notas
+    escreva("\n• Informe o seu NOME: ")
+    leia(nome)
+
+    escreva("\n• Digite a primeira nota: ")
+    leia(nota1)
+
+    escreva("\n• Digite a segunda nota: ")
+    leia(nota2)
+
+    escreva("\n• Digite a terceira nota: ")
+    leia(nota3)
+
+    // Calcular e exibir média
+    media = (nota1 + nota2 +nota3) / 3
+    mediaFinal = mat.arredondar(media, 0)
+    escreva("\n\n\n==========================")
+    escreva("\nALUNO: ", nome)
+    escreva("\nMÉDIA: ", mediaFinal)
+    escreva("\n==========================\n")
+
+  }
+}
