@@ -1,0 +1,34 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    
+    // Variáveis
+    real precoOriginal, percentualDesconto, valorDesconto, valorDescontoArredondado, precoComDesconto, precoFinal
+
+    // Título
+    escreva("================================\n")
+    escreva("CÁLCULO DE DESCONTOS DE PRODUTOS")
+    escreva("\n================================\n\n")
+    
+    // Entrada de Dados
+    escreva("Informe o preço original do produto em R$: ")
+    leia(precoOriginal)
+
+    escreva("Informe o percentual de desconto: ")
+    leia(percentualDesconto)
+
+    // Cálculo e arredondamento
+    valorDesconto = precoOriginal * (percentualDesconto / 100)
+    valorDescontoArredondado = mat.arredondar(valorDesconto, 0)
+    precoComDesconto = precoOriginal - valorDescontoArredondado
+    precoFinal = mat.arredondar(precoComDesconto, 2)
+
+    // Exibir informações finais
+    
+    escreva("\n\n\n===========================")
+    escreva("\nPreco original: R$ " + precoOriginal, "\n")
+    escreva("Desconto (", percentualDesconto, "%): R$ ", valorDesconto, "\n")
+    escreva("Preço com desconto: R$ ", precoFinal)
+    escreva("\n===========================\n")
+  }
+}
