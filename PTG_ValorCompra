@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+    
+    // Variáveis
+    real precoProduto, valorTotal
+    inteiro quantidade
+
+    // Entrada de dados
+    escreva("Informe o preço do produto adquirido: ")
+    leia(precoProduto)
+
+    escreva("Informe a quantidade de produtos adquiridos: ")
+    leia(quantidade)
+    
+    // Cálculo
+    valorTotal = precoProduto * quantidade
+
+    escreva("O valor total da compra é: " + valorTotal)
+
+  }
+}
