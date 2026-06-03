@@ -1,0 +1,35 @@
+programa {
+  funcao inicio() {
+    
+    // Variáveis
+    inteiro idade
+    cadeia nome
+
+    // Título
+    escreva("=======================================\n")
+    escreva("VERIFICAR SE O USUÁRIO É MAIOR DE IDADE\n")
+    escreva("=======================================\n\n")
+
+    // Entrada de dados
+    escreva("• Informe o seu NOME: ")
+    leia(nome)
+
+    escreva("\n• Informe a sua IDADE: ")
+    leia(idade)
+
+    // Checar condição e mostrar resultado
+    
+    escreva("\n\n\n===================================\n")
+    
+    se (idade > 18) {
+      escreva(nome + ", você tem mais que 18 anos.")
+    }
+    senao se (idade == 18) {
+      escreva(nome + ", você tem exatamente 18 anos.")
+    }
+    senao se(idade < 18) {
+      escreva(nome + ", você tem menos que 18 anos.")
+    }
+    escreva("\n===================================\n\n")
+  }
+}
