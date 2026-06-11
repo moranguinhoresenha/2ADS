@@ -1,0 +1,52 @@
+programa {
+  funcao inicio() {
+    
+    // Variáveis
+    real numero1, numero2
+    caracter operacao
+
+    // Entrada de dados
+    escreva("Mini Calculadora de Dois Numeros\n\n")
+
+    escreva("Digite o primeiro número: ")
+    leia(numero1)
+
+    escreva("Digite o segundo número: ")
+    leia(numero2)
+
+    escreva("Escolha a operação que deseja efetuar:\n\n")
+
+    escreva("+ | Soma\n")
+    escreva("- | Subtração\n")
+    escreva("* | Multiplicação\n")
+    escreva("/ - Divisão")
+    escreva("\nInsira o símbolo da operação escolhida: ")
+
+    leia(operacao)
+
+    // Execução da operação e exibição do resultado
+    escreva("\nVocê escolheu a operação: " + operacao + "\n")
+    escreva("\nResultado: " + numero1 + " "  + operacao + " " + numero2 + " = ")
+
+    se(operacao == '+') {
+      escreva((numero1 + numero2))
+    }
+    senao se(operacao == '-') {
+      escreva(numero1 - numero2)
+    }
+    senao se(operacao == '*') {
+      escreva(numero1 * numero2)
+    }
+    senao se(operacao == '/') {
+      se(numero2 > 0) {
+        escreva(numero1 / numero2)
+      }
+      senao {
+        escreva("Não é possível dividir por 0.")
+      }
+    }
+    senao {
+      escreva("Escolha um operador válido!")
+    }
+  }
+}
