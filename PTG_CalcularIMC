@@ -1,0 +1,43 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+      
+      // Variáveis
+      cadeia nome, resultado
+      real imc, peso, altura, imcfinal
+
+      // Entrada de dados
+      escreva("============================\n")
+      escreva("Programa para calcular o IMC\n")
+      escreva("============================\n\n")
+
+      escreva("• Digite o seu NOME: ")
+      leia(nome)
+
+      escreva("\n• Digite o seu PESO: ")
+      leia(peso)
+      
+      escreva("\n• Digite a sua ALTURA: ")
+      leia(altura)
+
+      // Fórmula para calcular o IMC
+      imc = peso / (altura * altura)
+      imcfinal = mat.arredondar(imc, 1)
+      
+      // Saída de dados
+      escreva("\n\n\n=================================")
+      escreva("\n» " + nome + ", seu IMC é: " + imcfinal + "\n")
+
+      // Classificações
+      se (imcfinal < 18.5) {
+        escreva("» Classificação: Abaixo do Peso\n")
+      } senao se(imcfinal < 25) {
+        escreva("» Classificação: Peso Normal\n")
+      } senao se(imcfinal < 30) {
+        escreva("» Classificação: Sobrepeso\n")
+      } senao {
+        escreva("» Classificação: Obesidade\n")
+      }
+      escreva("=================================\n")
+  }
+}
