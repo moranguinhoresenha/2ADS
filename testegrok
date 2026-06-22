@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha Técnica - Chevrolet Omega 4.1</title>
+  
+  <!-- Estilos CSS internos -->
+  <style>
+    /* Reset básico e estilo geral da página */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
+      color: #eee;
+    }
+
+    /* Cabeçalho com sombra */
+    header {
+      background: linear-gradient(to right, #c00, #900);
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Sombra no cabeçalho */
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    header p {
+      margin: 8px 0 0;
+      font-size: 1.3rem;
+      opacity: 0.95;
+    }
+
+    /* Container central da página */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #ffcc00;
+      border-bottom: 3px solid #ffcc00;
+      padding-bottom: 10px;
+    }
+
+    /* Lista não ordenada com estilo */
+    ul {
+      background: rgba(255,255,255,0.05);
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      line-height: 2.1;
+    }
+
+    li {
+      font-size: 1.1rem;
+    }
+
+    /* Botão estilizado */
+    button {
+      margin-top: 30px;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      background: #c00;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(204, 0, 0, 0.4);
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background: #ff0000;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(204, 0, 0, 0.5);
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 40px;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho da página -->
+  <header>
+    <h1>CHEVROLET OMEGA 4.1</h1>
+    <p>Ficha Técnica Completa</p>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    
+    <h2>Especificações Técnicas</h2>
+    
+    <!-- Lista não ordenada -->
+    <ul>
+      <li><strong>Motor:</strong> 4.1 litros, 6 cilindros em linha (GM 250 / 4.1 MPFI)</li>
+      <li><strong>Potência:</strong> 171 cv a 4.800 rpm (álcool) / 158 cv (gasolina)</li>
+      <li><strong>Torque:</strong> 29,5 kgfm a 3.200 rpm</li>
+      <li><strong>Combustível:</strong> Gasolina ou Álcool</li>
+      <li><strong>Transmissão:</strong> Manual de 5 marchas ou Automática de 4 marchas</li>
+      <li><strong>Tração:</strong> Traseira</li>
+      <li><strong>0 a 100 km/h:</strong> ≈ 9,8 segundos</li>
+      <li><strong>Velocidade máxima:</strong> ≈ 205 km/h</li>
+      <li><strong>Peso:</strong> 1.380 kg (aprox.)</li>
+      <li><strong>Comprimento:</strong> 4.770 mm</li>
+      <li><strong>Portas:</strong> 4</li>
+      <li><strong>Ano de produção:</strong> 1992 – 1998</li>
+    </ul>
+
+    <!-- Botão interativo -->
+    <center>
+      <button onclick="mostrarInfo()">
+        Ver Mais Detalhes
+      </button>
+    </center>
+
+    <div class="info">
+      Chevrolet Omega CD 4.1 — Um dos sedãs mais clássicos e potentes do Brasil
+    </div>
+  </div>
+
+  <!-- JavaScript da página -->
+  <script>
+    /**
+     * Função executada quando o botão é clicado
+     */
+    function mostrarInfo() {
+      alert("🚗 O Chevrolet Omega 4.1 foi um dos sedãs mais desejados dos anos 90 no Brasil!\n\nPossuía excelente dirigibilidade, conforto e um motor robusto e confiável.");
+      
+      // Efeito visual no botão
+      const botao = document.querySelector('button');
+      botao.style.background = '#ffaa00';
+      
+      setTimeout(() => {
+        botao.style.background = '#c00';
+      }, 800);
+    }
+  </script>
+
+</body>
+</html>
