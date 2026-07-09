@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    
+    // Variáveis
+    inteiro numero
+
+    // Entrada de dados
+    escreva("===================================\n")
+    escreva("Detecção de números páres e ímpares\n")
+    escreva("===================================\n\n")
+    escreva("• Digite o número: ")
+    leia(numero)
+
+    // Estrutura condicional
+    escreva("\n\n\n\n\n\n==================================")
+    se (numero % 2 == 0) {
+      escreva("\n » O número " + numero +  " é par.")
+    } senao {
+      escreva("\n » O número " + numero +  " é ímpar.")
+    }
+    escreva("\n==================================\n")
+  }
+}
