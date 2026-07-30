@@ -1,0 +1,32 @@
+programa {
+  funcao inicio() {
+    
+    // Variável
+    inteiro idade
+    
+    // Título
+    escreva("=================================\n")
+    escreva("Verificar se o usuário pode votar\n")
+    escreva("=================================\n\n")
+    
+    // Entrada de dados
+    escreva("» Digite sua idade: ")
+    leia(idade)
+    
+    // Estrutura condicional e resultado
+    escreva("\n\n================================================\n")
+    se (idade < 16) {
+      escreva("• Sua idade é menor que 16, você não pode votar.\n")
+    }
+    senao se (idade >= 16 e idade <= 17) {
+      escreva("• O voto é opcional.\n")
+    }
+    senao se (idade >= 18 e idade <= 70) {
+      escreva("• O voto é obrigatório.\n")
+    }
+    senao {
+      escreva("• O voto é opcional.\n")
+    }
+    escreva("================================================\n")
+  }
+}
